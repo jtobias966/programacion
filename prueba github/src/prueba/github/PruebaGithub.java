@@ -52,14 +52,14 @@ public class PruebaGithub {
     for(i=0;i<5;i++){
            for(j=0;j<5;j++){
                sumacolumna=sumacolumna+matriz[j][i];
-           vectorC[j]=sumacolumna;}
-             
+           }
+    vectorC[i]=sumacolumna;         
     sumacolumna=0;}
-    int pos2=0;
-    int ap2;
+    int pos2=0,ap2,max2=0;
+   
     for(ap2=0;ap2<5;ap2++)
-    if(vectorC[ap2]>max){
-    max=vectorC[ap2];
+    if(vectorC[ap2]>max2){
+    max2=vectorC[ap2];
     pos2=ap2;
     }
     System.out.print("el mes que mas se vendio fue "+pos2 );
