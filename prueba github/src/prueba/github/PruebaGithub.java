@@ -21,6 +21,7 @@ public class PruebaGithub {
         int sumafila=0,sumacolumna=0;
         Random azar=new Random();
        int vectorF[]= new int[5];
+       int vectorC[]=new int[5];
        for(i=0;i<5;i++)
            for(j=0;j<5;j++)
                matriz[i][j]=azar.nextInt(9);
@@ -45,6 +46,25 @@ public class PruebaGithub {
     pos=ap;
     }
     System.out.print("el que mas vendio fue el vendedor "+pos );
+    
+    System.out.println();
+    
+    for(i=0;i<5;i++){
+           for(j=0;j<5;j++){
+               sumacolumna=sumacolumna+matriz[j][i];
+           vectorC[j]=sumacolumna;}
+             
+    sumacolumna=0;}
+    int pos2=0;
+    int ap2;
+    for(ap2=0;ap2<5;ap2++)
+    if(vectorC[ap2]>max){
+    max=vectorC[ap2];
+    pos2=ap2;
+    }
+    System.out.print("el mes que mas se vendio fue "+pos2 );
+    
+    
     
     
     
