@@ -18,10 +18,11 @@ public class CambioABinarios {
         int NumDec;
         int Binario[]=new int [8];
         int i;
-        int aux=0;
+        int aux;
         Scanner leer=new Scanner(System.in);
         
         System.out.print("ingrese el numero que desea transformar a binario");
+        try{
         NumDec=leer.nextInt(); 
         if(NumDec>=0 && NumDec<256){
         for(i=0;i<8;i++){
@@ -42,6 +43,10 @@ public class CambioABinarios {
             System.out.print(Binario[i]);
       
         }else{System.out.print("Error");}
+        }catch(Exception e){System.out.print("El valor ingresado no es entero");
+        
+        }
+        }
         
         
         
@@ -52,4 +57,3 @@ public class CambioABinarios {
         // TODO code application logic here
     }
     
-}
