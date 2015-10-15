@@ -227,9 +227,9 @@ public class EcuacionDeLaRecta {
         Op=leer.nextInt();
         switch (Op){
             case 1:{EcRecta();
-            break;}
+                    break;}
             case 2:{PerArVol();
-            break;}
+                    break;}
       
         }
         
