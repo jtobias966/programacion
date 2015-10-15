@@ -213,23 +213,35 @@ public class Calculadora {
         
                 }
     }
+    
+    public static int leer(){
+        String x;
+        Scanner leer=new Scanner(System.in);
+        x=leer.next();
+        return Integer.parseInt(x);
+    }
+    
+    
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         int Op;
-        Scanner leer=new Scanner (System.in);
+        
         System.out.println("¿Qué operacion desea realizar?");
         System.out.println("1.Obtener la Ecuación de la recta dados dos puntos");
         System.out.println("2.Obtener el área, perímetro o volúmen");
-        Op=leer.nextInt();
+        try{
+        Op=leer();
         switch (Op){
             case 1:{EcRecta();}
             case 2:{PerArVol();}
       
         }
         
-        
+        }catch(Exception e){System.out.print("Ingrese uno de los numeros del menú");
+        }
         
         
         
